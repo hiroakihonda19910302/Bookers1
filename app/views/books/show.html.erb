@@ -1,4 +1,7 @@
 <div class="show1">
+	<% if flash[:notice] %>
+		<p><%= flash[:notice] %></p>
+	<% end %>
 	<p class="show_title">
 		<strong>Title: </strong><%= @book.title %>
 	</p>
